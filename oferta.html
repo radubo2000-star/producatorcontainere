@@ -7,30 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-info">
-                    <span>📞 Telefon: 0752.878.096</span>
-                    <span>✉️ Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9efff0faecfbf7eef1eeafa7a7a8def7fdf2f1ebfab0fdf1f3">[email&#160;protected]</a></span>
-                </div>
-            </div>
-        </div>
-        <nav class="main-nav">
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html" style="color: white; text-decoration: none;"><h1>PRODUCĂTOR CONTAINERE</h1></a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html#containere">Containere</a></li>
-                    <li><a href="index.html#galerie">Galerie</a></li>
-                    <li><a href="index.html#despre">Despre</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                <a href="oferta.html" class="btn-oferta">CERE OFERTA</a>
-            </div>
-        </nav>
-    </header>
+    <div data-include="header"></div>
 
     <section class="offer-page">
         <div class="container">
@@ -67,8 +44,22 @@
                     <div class="contact-box">
                         <h3>Contact Direct</h3>
                         <p><strong>Andrei Pop</strong></p>
-                        <p>📞 Telefon: <a href="tel:0752878096">0752.878.096</a></p>
-                        <p>✉️ Email: <a href="/cdn-cgi/l/email-protection#b9d8d7ddcbdcd0c9d6c98880808ff9d0dad5d6ccdd97dad6d4"><span class="__cf_email__" data-cfemail="96f7f8f2e4f3ffe6f9e6a7afafa0d6fff5faf9e3f2b8f5f9fb">[email&#160;protected]</span></a></p>
+                        <p>
+                            <a class="contact-icon phone" href="tel:0752878096" aria-label="Sună">
+                                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                                    <path fill="currentColor" d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.01l-2.21 2.21z"/>
+                                </svg>
+                            </a>
+                            <a class="contact-text" href="tel:0752878096">0752.878.096</a>
+                        </p>
+                        <p>
+                            <a class="contact-icon email" href="mailto:andreipop1996@icloud.com" aria-label="Trimite email">
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                                    <path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </a>
+                            <a class="contact-text" href="mailto:andreipop1996@icloud.com">andreipop1996@icloud.com</a>
+                        </p>
                     </div>
                 </div>
 
@@ -78,6 +69,8 @@
                         <input type="hidden" name="_subject" value="Cerere Oferta Nouă - Containere la Comandă">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
+                        <!-- Ensure reply-to is set so FormSubmit will set Reply-To header -->
+                        <input type="hidden" name="_replyto" value="">
                         <input type="hidden" name="_next" value="https://www.containere-la-comanda.ro/oferta.html?success=1">
                         <div class="form-row">
                             <div class="form-group">
@@ -178,6 +171,6 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

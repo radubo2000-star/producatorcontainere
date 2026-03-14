@@ -33,6 +33,44 @@ body {
     font-size: 14px;
 }
 
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    margin-left: 8px;
+}
+
+.contact-icon:hover {
+    background: rgba(255,255,255,0.16);
+    transform: translateY(-2px);
+}
+
+.contact-icon svg { display: block; }
+
+.footer-contact { display: flex; align-items: center; gap: 12px; }
+.phone-number { color: #fff; opacity: 0.9; font-weight: 600; }
+
+/* Ensure anchor icons contrast on blue background */
+.header-top .contact-icon, .main-footer .contact-icon { color: white; }
+
+.contact-text {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(255,255,255,0.06);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.contact-text:hover { background: rgba(255,255,255,0.12); }
+
 .main-nav {
     padding: 15px 0;
 }
